@@ -21,5 +21,6 @@ public class Uranus : MonoBehaviour
     void Update()
     {
         transform.RotateAround(sun.position, Vector3.up, rotationSpeed * Time.deltaTime);
+        Debug.DrawLine(transform.position, sun.transform.position, Color.red);
     }
 }
